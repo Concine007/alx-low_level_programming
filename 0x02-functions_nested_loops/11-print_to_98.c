@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include <stdio.h>
+
 /**
  * print_to_98 - print natural numbers
  * @n: functon parameter
@@ -8,38 +10,36 @@
 
 void print_to_98(int n)
 {
-	int x;
-
-	if (n >= 0 && n <= 98)
+	if (n <= 98)
 	{
-		for (x = n ; x <= 98 ; x++)
+		for (; n <= 98 ; n++)
 		{
-			printf("%d", x);
-			if (x != 98)
-				printf(", ");
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+			break;
 		}
-		printf("\n");
+		else
+		{
+		printf("%d, ", n);
+		}
+		}
 	}
-	else if (n < 0)
+	else
 	{
-		for (x = n ; x <= 98 ; x++)
+		for (; n >= 98 ; n--)
 		{
-			printf("%d", x);
-			if (x != 98)
-				printf(", ");
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
-		printf("\n");
 	}
-	else if (n > 98)
-	{
-		for (x = n ; x >= 98 ; x++)
-		{
-			printf("%d", x);
-			if (x != 98)
-				printf(", ");
-		}
-		printf("\n");
-	}
-	else if (n == 98)
-		printf("%d", n);
 }
