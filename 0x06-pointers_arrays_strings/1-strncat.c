@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strincat - concentrates two strings using at most
+ * _strncat - concentrates two strings using at most
  * @dest: string to be appended upon
  * @src: string to be appended to dest
  * @n: number of bytes
