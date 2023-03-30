@@ -19,7 +19,7 @@ char *leet(char *c)
 		{
 			if (c[a] == x[b])
 			{
-				c[x] = y[b];
+				c[a] = y[b];
 			}
 		}
 	}
