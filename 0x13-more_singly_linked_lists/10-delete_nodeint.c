@@ -13,6 +13,8 @@ listint_t *a = *head;
 listint_t *c = NULL;
 unsigned int x = 0;
 
+if (*head == NULL)
+return (-1);
 if (index == 0)
 {
 *head = (*head)->next;
