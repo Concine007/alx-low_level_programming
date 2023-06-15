@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
 *delete_dnodeint_at_index - deletes the node at index index
@@ -27,7 +29,7 @@ if (current == NULL)
 {
 return (-1);
 }
-dlistint_t *next = current->next;
+dlistint *next = current->next;
 current->next = next->next;
 next->next->prev = current;
 free(next);
