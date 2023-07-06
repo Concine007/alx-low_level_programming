@@ -12,6 +12,6 @@ int q;
 
 ha = 5381;
 while ((q = *str++))
-ha = ((ha << 5) + ha) + q;
+ha = (ha << 5) + ha + q;
 return (ha);
 }
